@@ -1,0 +1,19 @@
+$header-container-color: #031b4e;
+$text-heading: #ffffff;
+
+.container-fluid {
+  background-color: $header-container-color;
+
+  .heading {
+    text-align: left;
+    padding: 1rem;
+
+    h1 {
+      color: $text-heading;
+      font-size: 22px;
+      font-weight: 500;
+      font-family: "Roboto", serif;
+      text-transform: uppercase;
+    }
+  }
+}

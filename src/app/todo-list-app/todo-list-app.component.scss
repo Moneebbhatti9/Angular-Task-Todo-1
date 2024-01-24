@@ -1,0 +1,66 @@
+.container {
+  margin-top: 20px;
+
+  .heading {
+    h1 {
+      font-size: 18px;
+      font-weight: bolder;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  .add-item-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 3rem;
+
+    .custom {
+      padding: 5px 30px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+
+    .item-details {
+      display: flex;
+      justify-content: flex-start;
+      gap: 15px;
+    }
+
+    .button-wrapper {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+
+  .item-row::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #bebebe;
+    width: 100%;
+    margin-top: 0.5rem;
+    position: absolute;
+    bottom: -15px;
+  }
+
+  .completed {
+    text-decoration: line-through;
+  }
+}
